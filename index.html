@@ -247,7 +247,7 @@
 <p>第六步 安装sublime Text3:去浏览器搜索sublime Text3去官网安装即可。安装完成后,点击左上角文件（file）-&gt;打开文件夹-&gt;选中刚才的blog文件夹，此时点击source，posts下的文件里面就可以修改博客信息。</p>
 <p>第七步 将hexo发布到github上去:点击_config.yml，滑到最下方找到type:它后面的东西删掉，后面写git，进入github找到仓库-&gt;点击Code-&gt;点击Clone or download-&gt;复制网址,在type下一行填写repo: 网址回车 ，输入branch: master，退出sublime Text3 window+R -&gt;输入cmd回车-&gt;切换到blog 博客名的文件夹下输入 hexo g回车,输入npm install hexo-deployer-git –save回车进行安装,安装完成后,再输入hexo g回车，输入hexo d进行提交回车，输入git config –global user.email “邮箱地址”回车,输入git config –global user.name “用户名”，回车,输入用户名密码，hexo d 再进行提交。此时输入我们的网址便可查看博客，已经公开发布了。</p>
 <p>第八步使用主题：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">百度搜索hexo主题（点击进入）</a>,在下面的search框里搜索next<br>点击Next,就来到了github的源码，点击题目为Installation下的 detailed installation instructions里面有安装步骤但不详细,点击标题为option1下的 latest release version进行下载,下载要下载标题为Assets下的Source(zip),完成后进行压缩,把压缩后的文件剪切到blog/博客名/themes里面并改名为next,然后到sublime Text3下的_config.yml文件下找到关键字themes把他后面的内容修改成next（记得保存）。然后 window+R cmd 切换到blog/博客名文件夹下,输入hexo g 回车，输入命令行hexo s -p 5555，回车,此时本地就可看到next格式下的博客。在 sublime Text3的next文件夹下找到_config.yml文件,找到scheme:Muse将它注释掉,将它下面的scheme:Mist的注释去掉</p>
-<p><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">更换主题（点击进入）</a><br>推到远端：hexo clean ——&gt;hexo g——&gt; hexo d(文件需以md结尾)</p>
+<p><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">更换主题（点击进入）</a><br>推到远端：hexo clean —&gt; hexo d(文件需以md结尾)</p>
 
       
 
