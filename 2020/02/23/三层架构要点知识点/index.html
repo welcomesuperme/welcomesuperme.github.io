@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="https://welcomesuperme.github.io">
   <title>三层架构要点知识点 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="三层架构： 表示层（UI）——&gt;页面(用户可视页面,因为没有学跟html连接,所以暂时存放在测试类中) 业务逻辑层(BI)——&gt;办理业务和分析、加工等（用于书写业务代码,存放功能接口实现类,方便测试类调用） 数据访问层(DAO)——&gt;数据库访问操作（用于存放业务代码所需要使用到的功能接口）  分层原则：遵循封装性原则和顺序访问原则DAO层是为业务逻辑层提供服务的,业务逻辑层可以调用DAO层数据,但">
+  <meta name="description" content="三层架构： 表示层（UI）——&gt;页面(用户可视页面,因为没有学跟html连接,所以暂时存放在测试类中) 业务逻辑层(BI)——&gt;办理业务和分析、加工等（用于书写业务代码,存放功能接口实现类,方便测试类调用) 数据访问层(DAO)——&gt;数据库访问操作（用于存放业务代码所需要使用到的功能接口）  分层原则：遵循封装性原则和顺序访问原则DAO层是为业务逻辑层提供服务的,业务逻辑层可以调用DAO层数据,但">
 <meta property="og:type" content="article">
 <meta property="og:title" content="三层架构要点知识点">
 <meta property="og:url" content="https://welcomesuperme.github.io/2020/02/23/%E4%B8%89%E5%B1%82%E6%9E%B6%E6%9E%84%E8%A6%81%E7%82%B9%E7%9F%A5%E8%AF%86%E7%82%B9/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="三层架构： 表示层（UI）——&gt;页面(用户可视页面,因为没有学跟html连接,所以暂时存放在测试类中) 业务逻辑层(BI)——&gt;办理业务和分析、加工等（用于书写业务代码,存放功能接口实现类,方便测试类调用） 数据访问层(DAO)——&gt;数据库访问操作（用于存放业务代码所需要使用到的功能接口）  分层原则：遵循封装性原则和顺序访问原则DAO层是为业务逻辑层提供服务的,业务逻辑层可以调用DAO层数据,但">
+<meta property="og:description" content="三层架构： 表示层（UI）——&gt;页面(用户可视页面,因为没有学跟html连接,所以暂时存放在测试类中) 业务逻辑层(BI)——&gt;办理业务和分析、加工等（用于书写业务代码,存放功能接口实现类,方便测试类调用) 数据访问层(DAO)——&gt;数据库访问操作（用于存放业务代码所需要使用到的功能接口）  分层原则：遵循封装性原则和顺序访问原则DAO层是为业务逻辑层提供服务的,业务逻辑层可以调用DAO层数据,但">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-02-23T09:34:59.890Z">
-<meta property="article:modified_time" content="2020-02-26T07:28:39.592Z">
+<meta property="article:modified_time" content="2020-02-26T07:38:15.344Z">
 <meta property="article:author" content="王新阳">
 <meta name="twitter:card" content="summary">
   
@@ -175,9 +175,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2>三层架构：</h2>
-表示层（UI）——>页面(用户可视页面,因为没有学跟html连接,所以暂时存放在测试类中)
-业务逻辑层(BI)——>办理业务和分析、加工等（用于书写业务代码,存放功能接口实现类,方便测试类调用）
-数据访问层(DAO)——>数据库访问操作（用于存放业务代码所需要使用到的功能接口）
+<p>表示层（UI）——>页面(用户可视页面,因为没有学跟html连接,所以暂时存放在测试类中)</br>
+业务逻辑层(BI)——>办理业务和分析、加工等（用于书写业务代码,存放功能接口实现类,方便测试类调用)</br>
+数据访问层(DAO)——>数据库访问操作（用于存放业务代码所需要使用到的功能接口）</p>
 
 <p>分层原则：遵循封装性原则和顺序访问原则<br>DAO层是为业务逻辑层提供服务的,业务逻辑层可以调用DAO层数据,但DAO层不可以调用业务逻辑层的数据。同样表示层不可调用业务逻辑层数据，而数据访问层可以调用业务逻辑层数据。</p>
 <h2>分层特点：</h2>
